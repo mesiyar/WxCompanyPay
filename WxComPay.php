@@ -41,7 +41,7 @@ class WxComPay
      * @param string $desc 描述信息
      * @return array                    接口返回相关信息
      */
-    public function weixin_transfer_money(string $openid, $reUserName = '', string $amount, string $partnerTradeNo, string $desc)
+    public function weixinTransferMoney(string $openid, string $amount, string $partnerTradeNo, string $desc, $reUserName = ''): array
     {
         $data = [
             'mch_appid' => $this->mchAppId,
